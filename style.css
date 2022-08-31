@@ -88,7 +88,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: white;
-    border-radius: 5px;    
+    border-radius: 5px;
 }
 
 .nav a {
@@ -111,10 +111,12 @@ main {
         height: 80px;
         background-color: white;
     }
+
     .nav-cont {
         display: flex;
         justify-content: space-between;
     }
+
     .nav {
         width: 30%;
         border: 1px solid lightgray;
@@ -127,6 +129,7 @@ main {
         margin: 0;
         background-color: white;
     }
+
     .nav {
         border: 1px solid lightgray;
     }
@@ -157,7 +160,7 @@ main {
     border-radius: 3px;
 }
 
-.card-icon-section{
+.card-icon-section {
     display: flex;
     justify-content: space-around;
 }
@@ -167,6 +170,7 @@ main {
     .main-section {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .card-container {
         margin-top: 10%;
         grid-template-columns: repeat(2, 1fr);
@@ -191,10 +195,42 @@ main {
     margin-top: 10%;
     height: 350px;
     background-color: black;
+    display: flex;
 }
+
 .footer-cont {
-    width: 90%;
+    width: 80%;
     margin: auto;
     text-align: center;
-    justify-content: center;
+    /* justify-content: center; */
+}
+
+.footer-cont h2 {
+    font-size: 2.5em;
+}
+
+.footer-link-container {
+    height: 100%;
+    padding: 2% 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* footer section responsive for medium device */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .footer-container {
+        margin-top: 200px;
+    }
+}
+
+/* footer section responsive for small device */
+@media screen and (max-width: 576px) {
+    .footer-container {
+        height: 100%;
+        margin-top: 700px;
+    }
+
+    .footer-link-container {
+        flex-direction: column;
+    }
 }
