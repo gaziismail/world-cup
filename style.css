@@ -37,6 +37,14 @@ h1 {
     padding: 5px 15px;
     background-color: red;
     border-radius: 3px;
+    transition: padding .2s, color .2s;
+}
+
+/* watch-live button hover effect */
+.watch-live-btn:hover {
+    padding: 10px 25px;
+    color: black;
+    background-color: goldenrod;
 }
 
 .responsive-img {
