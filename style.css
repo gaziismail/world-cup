@@ -43,18 +43,6 @@ h1 {
     width: 100%;
 }
 
-/* header section responsive for small devices */
-@media screen and (max-width: 576px) {
-    .banner-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .half-width {
-        text-align: center;
-    }
-}
-
 /* main(nav & card) section styles */
 main {
     width: 80%;
@@ -105,36 +93,6 @@ main {
     color: white;
 }
 
-/* navigation responsive for medium devices */
-@media screen and (min-width: 577px) and (max-width: 768px) {
-    .navigation-container {
-        height: 80px;
-        background-color: white;
-    }
-
-    .nav-cont {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav {
-        width: 30%;
-        border: 1px solid lightgray;
-    }
-}
-
-/* navigation responsive for small devices */
-@media screen and (max-width: 576px) {
-    .navigation-container {
-        margin: 0;
-        background-color: white;
-    }
-
-    .nav {
-        border: 1px solid lightgray;
-    }
-}
-
 /* card section styles */
 .card-container {
     display: grid;
@@ -163,19 +121,6 @@ main {
 .card-icon-section {
     display: flex;
     justify-content: space-around;
-}
-
-/* main section responsive for medium devices */
-@media screen and (min-width: 577px) and (max-width: 768px) {
-    .main-section {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .card-container {
-        margin-top: 10%;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2%;
-    }
 }
 
 /* main section responsive for small devices */
@@ -214,17 +159,76 @@ main {
     padding: 2% 10%;
     display: flex;
     justify-content: space-around;
+    text-decoration: none;
 }
 
-/* footer section responsive for medium device */
+.footer-link-container a {
+    text-decoration: none;
+}
+
+
+
+/* responsive for medium devices */
 @media screen and (min-width: 577px) and (max-width: 768px) {
+
+    /* navigation responsive */
+    .navigation-container {
+        margin-right: 0;
+        height: 80px;
+        background-color: white;
+    }
+
+    .nav-cont {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav {
+        width: 30%;
+        border: 1px solid lightgray;
+    }
+
+    /* main section responsive */
+    .main-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-container {
+        margin-top: 10%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2%;
+    }
+
+    /* footer responsive */
     .footer-container {
         margin-top: 200px;
     }
 }
 
-/* footer section responsive for small device */
+/* responsive for small devices */
 @media screen and (max-width: 576px) {
+
+    /* header section responsive */
+    .banner-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .half-width {
+        text-align: center;
+    }
+
+    /* nevigation responsive */
+    .navigation-container {
+        margin: 0;
+        background-color: white;
+    }
+
+    .nav {
+        border: 1px solid lightgray;
+    }
+
+    /* footer responsive */
     .footer-container {
         height: 100%;
         margin-top: 700px;
